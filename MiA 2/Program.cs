@@ -12,6 +12,13 @@ using Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// ÄÎÄÀÉ ÎÖÅ
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(int.Parse(port));
+});
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 

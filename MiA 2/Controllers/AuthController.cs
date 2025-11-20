@@ -5,6 +5,7 @@ using Services.Interfaces;
 
 namespace Controllers;
 //Testing comment
+//test 2 
 [ApiController]
 [Route("api/[controller]")]
 public class AuthController : ControllerBase

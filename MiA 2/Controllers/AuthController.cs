@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Services.Interfaces;
 
 namespace Controllers;
-
+//Testing comment
 [ApiController]
 [Route("api/[controller]")]
 public class AuthController : ControllerBase
